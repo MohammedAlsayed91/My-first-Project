@@ -1,0 +1,270 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JobApplication</title>
+    <link href="StyleSheet1.css" rel="stylesheet" />
+ 
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><img src="img/companyLogo.jpg" /></li>
+                <li><a href="job application.html">Job Application</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="Contact Us.html">contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form method="get">
+            <fieldset>
+                <legend>Job Application Form</legend>
+
+                <h3>Please Fill Out the Form Below to Submit Your Job Application!</h3>
+
+                <fieldset>
+                    <legend>General Information</legend>
+
+                    <label for="Name">Name </label>
+                    <br />
+
+                    <label for="FirstName">First Name</label>
+
+                    <input type="text" name="FirstName" id="FirstName" placeholder="First Name" value="" />
+
+
+
+                    <label class="LastName" for="LastName">Last Name</label>
+
+                    <input type="text" name="LastName" id="LastName" placeholder="Last Name" value="" />
+
+
+
+                    <br />
+                    <br />
+                    <br />
+
+                    <label for="Gender">Gender</label>
+                    <select>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+
+                    <label for="MaritalStatus">Marital Status</label>
+                    <select id="MaritalStatus" name="MaritalStatus">
+                        <option value="Single">Single</option>
+                        <option value="Married">Married</option>
+                    </select>
+
+                    <br />
+                    <br />
+
+                    <label for="Age">Age</label>
+                    <input type="number" name="Age" id="Age" placeholder="Age" />
+                    <br />
+                    <br />
+                    <label for="DrivigLicense">Driving Licence</label>
+                    <select>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+
+
+                    </select>
+
+                    <br />
+
+                </fieldset>
+
+
+                <fieldset>
+                    <legend>Contact</legend>
+
+                    <label for="Email">Email</label>
+                    <input type="email" name="Email" id="Email" value="" placeholder="Email example : exp@exp.com" />
+
+                    <br />
+                    <br />
+
+                    <label for="secondEamil">Second Email</label>
+                    <input type="email" name="secondEmail" id="secondEmail" placeholder="Second Email (Optional)" />
+
+                    <br />
+                    <br />
+
+                    <label for="adress">Adress</label>
+                    <input type="text" name="adress" id="adress" value="" placeholder="Adress" />
+                </fieldset>
+
+                <fieldset>
+                    <legend>Education</legend>
+
+
+                    <label for="CollageName">Collage Name </label>
+                    <input type="text" name="CollageName" id="CollageName" value="" placeholder="exp:Al-Balqa Applied University" />
+                    <br />
+                    <br />
+
+                    <label for="CollageMajor">Collage Major </label>
+                    <input type="text" name="CollageMajor" id="CollageMajor" value="" placeholder="exp:Mechanical Engineering" />
+                    <br />
+                    <br />
+
+                    <label for="GPA">GPA</label>
+                    <input type="number" name="GPA" id="GPA" value="" />
+
+
+                    <br />
+                    <br />
+
+                    <label for="startingDate">Starting Date</label>
+                    <input type="date" name="startingDate" id="startingDate" value="" />
+
+                    <br />
+                    <br />
+
+                    <label for="graduationDate">Graduation Date</label>
+                    <input type="date" name="graduationDate" id="graduationDate" value="" />
+
+
+
+                </fieldset>
+
+
+
+                <fieldset>
+                    <legend>Experience</legend>
+
+
+                    <label for="LastPosition">Last Position </label>
+                    <input type="text" name="LastPosition" id="LastPosition" value="" placeholder="What was your last position in your last company?" />
+                    <br />
+                    <br />
+
+                    <label for="YearsOfExperience">Years of Experience</label>
+                    <input type="number" name="YearsOfExperience" id="YearsOfExperience" value="" placeholder="How many years of experience do you have? " />
+                    <br />
+                    <br />
+
+
+                    <label for="workingAboard"> Are you willing to work aboard ? </label>
+                    <label for="yes">
+                        <input type="radio" name="workingAboard" value=""> Yes
+                    </label>
+
+                    <label for="no">
+                        <input type="radio" name="workingAboard" value=""> No
+                    </label>
+
+
+                    <br />
+                    <br />
+
+                    <label for="startWorking">When you can start work </label>
+                    <label for="Imediatly"> <input type="radio" name="startWorking" value="" />Imediatly</label>
+                    <label for="Notice"> <input type="radio" name="startWorking" value="" />I need a notice period</label>
+
+
+
+
+                </fieldset>
+
+
+
+                <fieldset>
+                    <legend>Resume and Certificates </legend>
+
+
+
+
+                    <label for="Picture ">Upload your picture:</label>
+                    <input type="file" id="Picture" name="Picture" accept=" .jpg, .png">
+
+                    <br />
+                    <br />
+
+                    <label for="resume">Upload Resume:</label>
+                    <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx">
+                    <br />
+                    <br>
+
+                    <label for="certificates">Upload Certificates:</label>
+                    <input type="file" id="certificates" name="certificates" accept=".pdf, .jpg">
+
+
+                    <br />
+                    <br />
+
+                    <label for="coverLetter">Cover Letter:</label>
+                    <textarea id="coverLetter" name="coverLetter" rows="4" cols="50" placeholder="Type your cover letter here..."></textarea>
+
+
+
+                </fieldset>
+
+
+                <fieldset>
+                    <legend>Terms and conditions</legend>
+                    <div id="termsBox">
+                        <h4>Terms and Conditions</h4>
+                        <p>This is an example of terms and conditions. Please read the following carefully:</p>
+                        <p>
+                            We take your privacy very seriously. As such, our Privacy Policy is an important part of this Agreement. The Privacy Policy explains how we collect information from you and how we may share that information.
+
+                        </p>
+
+                    </div>
+
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">Agree to the terms and conditions.</label>
+
+                    <br>
+
+                </fieldset>
+
+
+                <button type="submit">Submit</button>
+
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <div class="flexcontainer">
+
+            <div class="column">
+                <h3><a href="CopyRights.html">Copy Rights</a> </h3>
+                <ul>
+                    <li>  </li>
+                    <li>  </li>
+                    <li>  </li>
+                </ul>
+            </div>
+
+            <div class="column :">
+                <h3>Links : </h3>
+                <ul>
+                    <li><a href="job application.html"> Job Application</a></li>
+                    <li><a href="Contact Us.html">Contact Us</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                </ul>
+            </div>
+
+            <div class="column">
+                <h3><a href="aboutUs.html">Company informations</a> </h3>
+                <ul>
+                    <li>  </li>
+                    <li>  </li>
+                    <li>  </li>
+                </ul>
+            </div>
+
+
+        </div>
+
+</footer>
+</body>
+</html>
